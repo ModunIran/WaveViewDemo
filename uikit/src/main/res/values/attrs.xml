@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SugarWaveView">
+        <attr name="waveColor" format="color"/>
+        <attr name="backWaveAlpha" format="integer"/>
+        <attr name="cycle" format="integer"/>
+        <attr name="peakHeight" format="dimension"/>
+    </declare-styleable>
+</resources>

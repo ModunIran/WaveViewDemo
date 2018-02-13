@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.wulei.sugardemo.vm.MainVm"/>
+
+        <variable
+            name="listener"
+            type="com.wulei.sugardemo.vm.MainVm.Listener"/>
+    </data>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:paddingTop="40dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:text="@string/txt_wave_view"
+            android:background="@drawable/bg_main_btn"
+            android:onClick="@{()->listener.onWaveClick()}"
+            />
+
+    </LinearLayout>
+</layout>

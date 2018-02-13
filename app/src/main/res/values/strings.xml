@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SugarDemo</string>
+    <string name="txt_wave_view">波浪效果View</string>
+</resources>

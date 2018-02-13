@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="model"
+            type="com.wulei.sugardemo.vm.WaveVm"/>
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#BFEFFF">
+
+        <com.wulei.uikit.SugarWaveView
+            android:id="@+id/waveview"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentBottom="true"
+            app:peakHeight="5dp"
+            app:waveColor="#ffffff" />
+
+        <ImageView
+            android:id="@+id/iv_avatar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/waveview"
+            android:layout_centerHorizontal="true"
+            app:imgUrl="@{model.avatarUrl}"
+            app:radius="@{1000}"
+            app:marginBottom="@{model.avatarMargin}"
+            />
+
+    </RelativeLayout>
+</layout>
